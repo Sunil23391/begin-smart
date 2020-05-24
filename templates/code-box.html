@@ -1,0 +1,34 @@
+<div id="{*id*}" class="w3-container code-box">
+    <div class="w3-card-4">
+        <header class="w3-container w3-blue">
+            <h3>{*header*}</h3>
+        </header>
+
+        <div class="w3-container code-reader">
+            <div class="w3-right-align">
+                <a href="#{*id*}/fullscreen">
+                    <i class="material-icons fullscreen">fullscreen</i>
+                </a>
+            </div>
+            <textarea>
+{*codeString*}
+            </textarea>
+        </div>
+
+        <div class="w3-bar compile-container">
+            <div class="w3-margin w3-padding w3-red w3-text-white error-box" style="display: none;">
+                Compile Error : <span class="error-content"></span>
+            </div>
+        </div>
+        <div class="w3-bar w3-padding test-container">
+            <input type="text" class="w3-bar-item w3-input w3-white w3-mobile" placeholder="Input">
+            <button class="w3-bar-item w3-button w3-green w3-mobile">Check</button>
+            <span class="w3-bar-item">Result :</span>
+            <span class="w3-bar-item result"></span>
+        </div>
+
+        <footer class="w3-container w3-blue">
+            <h5>#beginsmartjs</h5>
+        </footer>
+    </div>
+</div>

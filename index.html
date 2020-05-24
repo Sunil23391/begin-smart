@@ -1,1 +1,94 @@
-<div id="app"></div>
+<!DOCTYPE html>
+<html>
+<title>Begin Smart Javascript</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.40.2/codemirror.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.40.2/theme/material.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.40.2/addon/display/fullscreen.css'>
+<link rel='stylesheet' href='style/default.css'>
+<style>
+    .w3-sidebar a {
+        font-family: "Roboto", sans-serif
+    }
+    
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .w3-wide {
+        font-family: "Montserrat", sans-serif;
+    }
+</style>
+
+<body class="w3-content main-body">
+
+    <!-- Sidebar/menu -->
+    <button class="w3-button w3-large w3-circle w3-xlarge w3-grey menu-bar-button change" onclick="toggle(true)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </button>
+    <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top nav-menu menu-over" id="sidebar">
+
+        <div class="menu-background">
+            <div class="w3-container w3-display-container w3-padding-16 no-mobile-menu-header">
+                <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+                <h3 class="w3-wide"><b>Begin Smart Javascript</b></h3>
+            </div>
+            <div id="programs-list" class="w3-padding-64 w3-large w3-text-grey">
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge menu-over">
+        <div class="w3-bar-item w3-padding-24 w3-wide menu-mobile-header">Begin Smart Javascript</div>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="toggle()"><i class="fa fa-bars"></i></a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="overlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main code-area menu-impact">
+
+
+        <!-- Push down content on small screens -->
+        <div class="w3-hide-large" style="margin-top:83px"></div>
+        <div id="codes-container">
+            
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+
+
+</body>
+<!-- Frameworks -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.40.2/codemirror.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.40.2/mode/xml/xml.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.40.2/mode/css/css.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.40.2/mode/javascript/javascript.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.40.2/mode/htmlmixed/htmlmixed.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.40.2/addon/display/fullscreen.js'></script>
+
+
+<!-- Code files a-->
+<script src="./js/services/apiServices.js"></script>
+<script src="./js/services/validationServices.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/menu-ui.js"></script>
+
+</html>
